@@ -24,6 +24,34 @@
         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
     </properties>
 
+    <profiles>
+        <profile>
+            <!-- Used for internal development within Net Group AS -->
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources/dev</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+        <profile>
+            <id>live</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources/live</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+    </profiles>
+
+
     <scm>
         <url>ssh://developer@leisurify.eu:10003/home/developer/project.git</url>
     </scm>
@@ -111,6 +139,13 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources/common</directory>
+            </resource>
+        </resources>
+
     </build>
 
 
