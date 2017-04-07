@@ -11,8 +11,8 @@ public class PlayerController {
     @Autowired
     PlayerService playerService;
 
-    @RequestMapping("/kit/about-company")
-    public String welcome(Model model) {
+    @RequestMapping("/player/")
+    public String index(Model model) {
         return "kit/about-company";
     }
 

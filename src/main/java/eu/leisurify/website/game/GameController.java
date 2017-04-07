@@ -11,8 +11,8 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-    @RequestMapping("/kit/")
-    public String welcome(Model model) {
+    @RequestMapping("/game/")
+    public String index(Model model) {
         return "kit/index";
     }
 

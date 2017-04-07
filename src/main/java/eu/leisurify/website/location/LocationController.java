@@ -11,8 +11,8 @@ public class LocationController {
     @Autowired
     LocationService locationService;
 
-    @RequestMapping("/kit/about-company")
-    public String welcome(Model model) {
+    @RequestMapping("/location/")
+    public String index(Model model) {
         return "kit/about-company";
     }
 
