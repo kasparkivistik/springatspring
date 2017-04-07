@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+echo ""
+echo ""
+echo "Compiling web application....."
+mvn clean compile war:exploded
+
+echo ""
+echo ""
+echo "Deploying files to server....."
+rsync -avz --delete -e 'ssh -p 10003' target/leisurify.eu-1.0-SNAPSHOT/ root@leisurify.eu:/var/lib/tomcat8/webapps/ROOT
+
+
+echo ""
+echo ""
+echo "Restarting Tomcat on server....."
+ssh -t -X -C n0@leisurify.eu -p 10003 /bin/bash <<'ENDSSH'
+
+# ================  restart tomcat  ================
+pydf
+
+sudo service tomcat8 restart
+
+ENDSSH
+
+

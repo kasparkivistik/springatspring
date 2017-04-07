@@ -1,0 +1,19 @@
+#+TITLE: Spring koolituse spikker
+#+AUTHOR:
+#+LANGUAGE: et
+
+* IntelliJ
+| Ava class            | CTRL + N         |
+| Ava fail             | SHIFT + CTRL + N |
+| Projekti käivitamine | ?                |
+* Apache Maven
+| projekti paketi kompileerimine | mvn clean package |
+| projekti käivitamine           | ?                 |
+* Git repositoorium
+  :PROPERTIES:
+  :ID:       1f446de1-ce52-4ad2-8e62-458f8fd8ec8c
+  :END:
+: git clone ssh://developer@leisurify.eu:10003/home/developer/project.git
+
+| kasutajanimi | developer |
+| parool       | spring    |
