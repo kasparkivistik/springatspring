@@ -4,7 +4,7 @@
 echo ""
 echo ""
 echo "Compiling web application....."
-mvn clean compile war:exploded
+mvn -P live clean compile war:exploded
 
 echo ""
 echo ""
