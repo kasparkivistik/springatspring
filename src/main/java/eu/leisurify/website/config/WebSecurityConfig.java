@@ -22,10 +22,10 @@ import java.util.List;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    
+
     @Autowired
     PlayerService playerService;
-    
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
@@ -53,7 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
                         Player player = playerService.findByEmail(username);
 
-                        if(player != null && authentication.getCredentials().equals(player.getPassword())) {
+                        if (player != null && authentication.getCredentials().equals(player.getPassword())) {
                             List<GrantedAuthority> grantedAuths = new ArrayList<>();
                             grantedAuths.add(new SimpleGrantedAuthority("USER"));
                             return new UsernamePasswordAuthenticationToken(authentication.getName(), authentication.getCredentials(), grantedAuths);
