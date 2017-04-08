@@ -22,7 +22,7 @@
         <div class="form-group">
             <form:label path="date" for="inputDate" class="col-sm-2 control-label">Date</form:label>
             <div class="col-sm-10">
-                <form:input path="date" type="date" class="form-control" id="inputDate" placeholder="Email"/>
+                <form:input path="date" type="date" class="form-control" id="inputDate" placeholder="Date"/>
             </div>
         </div>
         <div class="form-group">

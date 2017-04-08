@@ -1,7 +1,5 @@
-/*C21*/SET SCHEMA PUBLIC
-INSERT INTO PLAYER VALUES(2,'notanemail@maybeanemail.com','Bunneh','bunnies',NULL)
+/*C12*/SET SCHEMA PUBLIC
+INSERT INTO PLAYER VALUES(10,'lowry@kokk.eu','Lowry Cock','parool',NULL)
 COMMIT
-INSERT INTO PLAYER VALUES(3,'kasper@kasper.ee','kasper','Kaspar',NULL)
-COMMIT
-INSERT INTO PLAYER VALUES(9,'kasper@kasper.lv','Kasper Kevestuk','kasper',NULL)
+INSERT INTO GAME VALUES(1,'2017-04-05 00:00:00.000000',1,1,'JohGmae',10)
 COMMIT
