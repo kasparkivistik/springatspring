@@ -1,0 +1,27 @@
+/*C21*/SET SCHEMA PUBLIC
+alter table game add column draw_score integer not null
+alter table game add column losers_score integer not null
+alter table game add column name varchar(255)
+alter table game add column winner_score integer not null
+create table game_draw (game_id bigint not null, draw_id bigint not null, primary key (game_id, draw_id))
+alter table game_draw add constraint FK_apsi02hhi7cskgscbvo5k0tve foreign key (draw_id) references player
+alter table game_draw add constraint FK_f1lns2fdw89del3om53regabf foreign key (game_id) references game
+DISCONNECT
+/*C20*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C19*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C18*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C17*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C15*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C14*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C12*/SET SCHEMA PUBLIC
+DISCONNECT
