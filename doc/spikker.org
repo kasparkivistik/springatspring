@@ -9,6 +9,8 @@
 * Apache Maven
 | projekti paketi kompileerimine | mvn clean package         |
 | projekti käivitamine           | mvn clean spring-boot:run |
+* Viited
++ [[http://getbootstrap.com/css/][Bootstrap spikker]]
 * Git repositoorium
   :PROPERTIES:
   :ID:       1f446de1-ce52-4ad2-8e62-458f8fd8ec8c

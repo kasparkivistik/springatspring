@@ -12,9 +12,12 @@ public class Player implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(unique = true)
     private String name;
 
+    private String password;
+
+    @Column(unique = true)
+    private String email;
 }
 
 
