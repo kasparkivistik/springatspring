@@ -9,10 +9,11 @@
 
 
 <div class="jumbotron text-center">
-    <h1>Leisure unleashed Onu Ilja(CGI parim puhastusekspert)</h1>
+    <h1>Leisure unleashed Onu Ilja)</h1>
     <p>Find your game-mate now!</p>
     <button type="button" class="btn btn-success">Log in</button>
     <button type="button" class="btn btn-success" onclick="location.href='/registration/'">Join</button>
+    <button type="button" class="btn btn-success" onclick="location.href='/game/register/'">Add Game</button>
 </div>
 
 <div class="container">
