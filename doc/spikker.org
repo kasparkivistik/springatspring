@@ -6,6 +6,7 @@
 | Ava class     | CTRL + N         |
 | Ava fail      | SHIFT + CTRL + N |
 | Debug - jätka | F9               |
+| Kommiti koodi | CTRL + K         |
 * Apache Maven
 | projekti paketi kompileerimine | mvn clean package         |
 | projekti käivitamine           | mvn clean spring-boot:run |
