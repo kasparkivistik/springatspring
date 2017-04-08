@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//@Controller
 @RestController
 public class PlayerController {
 
@@ -20,10 +20,15 @@ public class PlayerController {
     private static final Log LOG = LogFactory.getLog(PlayerController.class);
 
     @RequestMapping(value = "/rest/v1/player/id/{playerId}", method = RequestMethod.GET)
-    public Player getPlayer(@PathVariable(value = "playerId") long playerId) throws IOException {
+    public Player getPlayer(@PathVariable(value = "playerId") long playerId, HttpServletResponse response) throws IOException {
         LOG.debug("REST: Retrieving player by ID: " + playerId);
 
         Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+             return null;
+        }
+
         LOG.debug("Retrieved player from the database: " + player);
         return player;
     }
