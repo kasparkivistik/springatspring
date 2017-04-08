@@ -1,4 +1,4 @@
-/*C21*/SET SCHEMA PUBLIC
+/*C12*/SET SCHEMA PUBLIC
 alter table game_losers drop constraint FK_42fpavsce5bymdpnlcrkrchvo
 alter table game_losers drop constraint FK_2i6rmf6s5qivohhfi6wuxgjrf
 alter table game_winners drop constraint FK_a0hijv5dgmatwu9hv35845csb
@@ -19,24 +19,3 @@ alter table game_losers add constraint FK_42fpavsce5bymdpnlcrkrchvo foreign key 
 alter table game_losers add constraint FK_2i6rmf6s5qivohhfi6wuxgjrf foreign key (game_id) references game
 alter table game_winners add constraint FK_a0hijv5dgmatwu9hv35845csb foreign key (winners_id) references player
 alter table game_winners add constraint FK_nt30ttd9usuv1j518hfx46mbq foreign key (game_id) references game
-INSERT INTO PLAYER VALUES(1,'svjatoslav@svjatoslav.eu','Svjatoslav Agejenko','123456')
-COMMIT
-DISCONNECT
-/*C20*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C19*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C18*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C17*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C16*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C15*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C14*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C13*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C12*/SET SCHEMA PUBLIC
-DISCONNECT
