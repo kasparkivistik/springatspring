@@ -11,8 +11,8 @@
 <div class="jumbotron text-center">
     <h1>Leisure unleashed Onu Ilja</h1>
     <p>Find your game-mate now!</p>
-    <a href="/login" class="btn btn-success">Log in</a>
-    <a href="registration" class="btn btn-success">Join</a>
+    <a href="<core:url value="/login"/>" class="btn btn-success">Log in</a>
+    <a href="<core:url value="/registration"/>" class="btn btn-success">Join</a>
 </div>
 
 <div class="container">
