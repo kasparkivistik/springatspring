@@ -9,7 +9,7 @@
 
 
 <div class="jumbotron text-center">
-    <h1>Leisure unleashed Onu Ilja(CGI parim puhastusekspert)</h1>
+    <h1>Leisure unleashed Onu Ilja</h1>
     <p>Find your game-mate now!</p>
     <a href="/login" class="btn btn-success">Log in</a>
     <a href="registration" class="btn btn-success">Join</a>
