@@ -30,6 +30,6 @@ public class PlayerService {
     }
 
     public List<Player> getPlayerByStatus(PlayerStatus status) {
-        return null;
+        return playerRepository.findByStatus(status);
     }
 }
