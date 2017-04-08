@@ -15,12 +15,22 @@ public class Game implements Cloneable, Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String name;
+
     private Date date;
 
     @ManyToMany
     private Set<Player> winners;
 
+    private int winnerScore;
+
     @ManyToMany
     private Set<Player> losers;
 
+    private int losersScore;
+
+    @ManyToMany
+    private Set<Player> draw;
+
+    private int drawScore;
 }
