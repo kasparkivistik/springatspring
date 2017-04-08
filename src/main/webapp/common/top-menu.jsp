@@ -22,12 +22,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="/top-players/">Top players</a></li>
             </ul>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
             <ul class="nav navbar-nav navbar-right">
                 <sec:authorize ifAnyGranted="USER">
                     <li><a href="<core:url value="/logout"/>">Logout (${principal})</a></li>
