@@ -1,6 +1,4 @@
 /src/main/resources/rebel.xml
 /target/
 /.idea/
-/database/leisurify.lck
-/database/leisurify.log
-/database/leisurify.properties
+/database/
