@@ -3,3 +3,5 @@ INSERT INTO PLAYER VALUES(2,'notanemail@maybeanemail.com','Bunneh','bunnies',NUL
 COMMIT
 INSERT INTO PLAYER VALUES(3,'kasper@kasper.ee','kasper','Kaspar',NULL)
 COMMIT
+INSERT INTO PLAYER VALUES(9,'kasper@kasper.lv','Kasper Kevestuk','kasper',NULL)
+COMMIT

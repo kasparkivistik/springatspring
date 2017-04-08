@@ -20,7 +20,7 @@ public class GameController {
         return new ModelAndView("gameregistration/index", "command", new Game());
     }
 
-    @RequestMapping(value = "/gameregistration/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/game/add", method = RequestMethod.POST)
     public String add(Map<String, Object> model, @ModelAttribute("SpringWeb") Game game) {
         gameService.saveReagent(game);
         return "redirect:/";
