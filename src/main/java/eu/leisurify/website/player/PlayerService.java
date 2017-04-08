@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -31,8 +30,6 @@ public class PlayerService {
     }
 
     public List<Player> getPlayerByStatus(PlayerStatus status) {
-        List<Player> listOfPlayers = new ArrayList<>();
-        listOfPlayers.add(playerRepository.findByPlayerStatus(status));
-        return listOfPlayers;
+        return null;
     }
 }

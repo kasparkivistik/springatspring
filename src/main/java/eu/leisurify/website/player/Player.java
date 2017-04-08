@@ -19,5 +19,6 @@ public class Player implements Serializable {
     @Column(unique = true)
     private String email;
 
+    @Enumerated(EnumType.STRING)
     private PlayerStatus status;
 }
