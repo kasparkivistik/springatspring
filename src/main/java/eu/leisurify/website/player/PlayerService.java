@@ -22,4 +22,8 @@ public class PlayerService {
     public Iterable<Player> getAllPlayers() {
         return playerRepository.findAll();
     }
+
+    public Player findByEmail(String email) {
+        return playerRepository.findByEmail(email);
+    }
 }
