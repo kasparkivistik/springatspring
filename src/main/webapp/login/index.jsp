@@ -14,7 +14,7 @@
 
     <form:form method="POST" action="/login" class="form-horizontal">
         <div class="form-group">
-            <form:label path="email" for="inputName" class="col-sm-2 control-label">Full name</form:label>
+            <form:label path="email" for="inputName" class="col-sm-2 control-label">E-Mail</form:label>
             <div class="col-sm-10">
                 <form:input path="email" type="text" class="form-control" id="inputName" placeholder="Email"/>
             </div>

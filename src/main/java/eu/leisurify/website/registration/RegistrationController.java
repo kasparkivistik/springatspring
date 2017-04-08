@@ -29,7 +29,11 @@ public class RegistrationController {
     @RequestMapping(value = "/registration/add", method = RequestMethod.POST)
     public String add(Map<String, Object> model, @ModelAttribute("SpringWeb") Player player) {
         LOG.debug("Adding new player: " + player);
-        playerService.savePlayer(player);
+        try {
+            playerService.savePlayer(player);
+        } catch (Exception ex) {
+            return "redirect:/registration?error";
+        }
         return "redirect:/";
     }
 
