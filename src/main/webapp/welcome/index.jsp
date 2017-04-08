@@ -13,6 +13,7 @@
     <p>Find your game-mate now!</p>
     <a href="<core:url value="/login"/>" class="btn btn-success">Log in</a>
     <a href="<core:url value="/registration"/>" class="btn btn-success">Join</a>
+    <button type="button" class="btn btn-success" onclick="location.href='/game/register/'">Game register</button>
 </div>
 
 <div class="container">

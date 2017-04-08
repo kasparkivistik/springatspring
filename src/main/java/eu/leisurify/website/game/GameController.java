@@ -15,7 +15,7 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-    @RequestMapping(value="game/register/", method=RequestMethod.GET)
+    @RequestMapping(value="game/register", method=RequestMethod.GET)
     public ModelAndView register(Map<String, Object> model) {
         return new ModelAndView("gameregistration/index", "command", new Game());
     }
