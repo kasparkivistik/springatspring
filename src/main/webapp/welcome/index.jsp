@@ -12,7 +12,7 @@
     <h1>Leisure unleashed</h1>
     <p>Find your game-mate now!</p>
     <button type="button" class="btn btn-success">Log in</button>
-    <button type="button" class="btn btn-success">Join</button>
+    <button type="button" class="btn btn-success" onclick="location.href='/registration/'">Join</button>
 </div>
 
 <div class="container">
