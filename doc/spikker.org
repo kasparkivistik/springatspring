@@ -11,6 +11,9 @@
 | projekti käivitamine           | mvn clean spring-boot:run |
 * Viited
 + [[http://getbootstrap.com/css/][Bootstrap spikker]]
++ [[https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation][Spring Data päringud]]
++ [[https://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html][Spring WEB MVC]]
+
 * Git repositoorium
   :PROPERTIES:
   :ID:       1f446de1-ce52-4ad2-8e62-458f8fd8ec8c

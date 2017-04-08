@@ -19,6 +19,8 @@ alter table game_losers add constraint FK_42fpavsce5bymdpnlcrkrchvo foreign key 
 alter table game_losers add constraint FK_2i6rmf6s5qivohhfi6wuxgjrf foreign key (game_id) references game
 alter table game_winners add constraint FK_a0hijv5dgmatwu9hv35845csb foreign key (winners_id) references player
 alter table game_winners add constraint FK_nt30ttd9usuv1j518hfx46mbq foreign key (game_id) references game
+INSERT INTO PLAYER VALUES(1,'svjatoslav@svjatoslav.eu','Svjatoslav Agejenko','123456')
+COMMIT
 DISCONNECT
 /*C20*/SET SCHEMA PUBLIC
 DISCONNECT
