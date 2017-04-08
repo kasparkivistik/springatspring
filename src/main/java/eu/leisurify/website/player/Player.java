@@ -18,7 +18,6 @@ public class Player implements Serializable {
 
     @Column(unique = true)
     private String email;
+
+    private PlayerStatus status;
 }
-
-
-
