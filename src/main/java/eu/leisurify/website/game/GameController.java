@@ -20,9 +20,15 @@ public class GameController {
         return new ModelAndView("gameregistration/index", "command", new Game());
     }
 
+    @RequestMapping(value="game", method=RequestMethod.GET)
+    public ModelAndView list(Map<String, Object> model) {
+        return new ModelAndView("statistics/game-table", "command", gameService.getAllGames());
+    }
+
     @RequestMapping(value = "/game/add", method = RequestMethod.POST)
-    public String add(Map<String, Object> model, @ModelAttribute("SpringWeb") Game game) {
-        gameService.saveReagent(game);
+    public String add(Map<String, Object> model, @ModelAttribute("winners") String winners, @ModelAttribute("losers") String losers) {
+
+        gameService.saveReagent(new Game());
         return "redirect:/";
     }
 
