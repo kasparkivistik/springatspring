@@ -21,4 +21,9 @@ public class LoginController {
         return new ModelAndView("login/index", "command", new Player());
     }
 
+    @RequestMapping(value="/logout", method= RequestMethod.GET)
+    public ModelAndView logout(Map<String, Object> model) {
+        return new ModelAndView("login/index", "command", new Player());
+    }
+
 }

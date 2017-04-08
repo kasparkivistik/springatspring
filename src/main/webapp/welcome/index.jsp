@@ -11,8 +11,8 @@
 <div class="jumbotron text-center">
     <h1>Leisure unleashed Onu Ilja(CGI parim puhastusekspert)</h1>
     <p>Find your game-mate now!</p>
-    <button type="button" class="btn btn-success">Log in</button>
-    <button type="button" class="btn btn-success" onclick="location.href='/registration/'">Join</button>
+    <a href="/login" class="btn btn-success">Log in</a>
+    <a href="registration" class="btn btn-success">Join</a>
 </div>
 
 <div class="container">

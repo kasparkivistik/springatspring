@@ -21,7 +21,7 @@ public class RegistrationController {
     @Autowired
     PlayerService playerService;
 
-    @RequestMapping(value="/registration/", method=RequestMethod.GET)
+    @RequestMapping(value="/registration", method=RequestMethod.GET)
     public ModelAndView register(Map<String, Object> model) {
         return new ModelAndView("registration/index", "command", new Player());
     }
