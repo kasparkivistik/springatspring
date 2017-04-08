@@ -19,13 +19,20 @@ public class PlayerController {
 
     private static final Log LOG = LogFactory.getLog(PlayerController.class);
 
-    @RequestMapping(value = "/rest/v1/player/{playerId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/rest/v1/player/id/{playerId}", method = RequestMethod.GET)
     public Player getPlayer(@PathVariable(value = "playerId") long playerId) throws IOException {
         LOG.debug("REST: Retrieving player by ID: " + playerId);
 
         Player player = playerService.getPlayer(playerId);
         LOG.debug("Retrieved player from the database: " + player);
         return player;
+    }
+
+    @RequestMapping(value = "/rest/v1/player/all", method = RequestMethod.GET)
+    public Iterable<Player> getAllPlayers() throws IOException {
+        LOG.debug("REST: Retrieving all players");
+
+        return playerService.getAllPlayers();
     }
 
 

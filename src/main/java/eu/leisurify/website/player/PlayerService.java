@@ -18,4 +18,8 @@ public class PlayerService {
     public Player getPlayer(long playerId) {
         return playerRepository.findOne(playerId);
     }
+
+    public Iterable<Player> getAllPlayers() {
+        return playerRepository.findAll();
+    }
 }
