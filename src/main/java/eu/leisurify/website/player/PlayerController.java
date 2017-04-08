@@ -25,8 +25,8 @@ public class PlayerController {
 
         Player player = playerService.getPlayer(playerId);
         if (player == null) {
-             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-             return null;
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+            return null;
         }
 
         LOG.debug("Retrieved player from the database: " + player);
